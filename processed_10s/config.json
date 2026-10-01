@@ -1,0 +1,12 @@
+{
+  "fs": 4,
+  "win": 40,
+  "step": 20,
+  "horizon": 4,
+  "stress_s": 1200,
+  "buffer_s": 3600,
+  "test_frac": 0.2,
+  "eda_min_us": 0.05,
+  "split": "chronological by time-overlap session group",
+  "norm": "per-participant min-max on train"
+}

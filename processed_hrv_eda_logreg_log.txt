@@ -1,0 +1,26 @@
+P101C: windows 13380, labelled 10734, with >= 30 clean beats 2173 (20% HRV coverage)
+P102C: windows 23825, labelled 9540, with >= 30 clean beats 1679 (18% HRV coverage)
+P104C: windows 15754, labelled 7934, with >= 30 clean beats 1468 (19% HRV coverage)
+P105C: windows 20189, labelled 16282, with >= 30 clean beats 4463 (27% HRV coverage)
+P106C: windows 24589, labelled 18740, with >= 30 clean beats 4542 (24% HRV coverage)
+P107C: windows 21666, labelled 18249, with >= 30 clean beats 1223 (7% HRV coverage)
+P108C: windows 11322, labelled 8372, with >= 30 clean beats 2035 (24% HRV coverage)
+P109C: windows 12937, labelled 8370, with >= 30 clean beats 1851 (22% HRV coverage)
+P110C: windows 17821, labelled 12761, with >= 30 clean beats 2527 (20% HRV coverage)
+P111C: windows 18225, labelled 12312, with >= 30 clean beats 1086 (9% HRV coverage)
+P112C: windows 23087, labelled 3796, with >= 30 clean beats 278 (7% HRV coverage)
+
+participant  n_windows  n_stress  EDA_train_auc  EDA_test_auc  HRV_train_auc  HRV_test_auc  EDA+HRV_train_auc  EDA+HRV_test_auc
+      P101C   2173.000    21.000          0.945         0.293          0.841         0.490              0.964             0.233
+      P102C   1679.000   131.000          0.677         0.515          0.587         0.370              0.685             0.406
+      P104C   1468.000     2.000            NaN           NaN            NaN           NaN                NaN               NaN
+      P105C   4463.000   128.000          0.591         0.488          0.615         0.568              0.659             0.550
+      P106C   4542.000   122.000          0.695         0.535          0.713         0.671              0.795             0.665
+      P107C   1223.000    20.000          0.923         0.792          0.772         0.732              0.933             0.817
+      P108C   2035.000    82.000          0.826         0.352          0.859         0.642              0.905             0.532
+      P109C   1851.000    92.000          0.689         0.501          0.690         0.367              0.766             0.439
+      P110C   2527.000    98.000          0.794         0.579          0.660         0.403              0.813             0.518
+      P111C   1086.000   107.000          0.669         0.378          0.687         0.525              0.743             0.428
+      P112C    278.000    41.000          0.864         0.448          0.777         0.629              0.929             0.539
+       MEAN   2120.455    76.727          0.767         0.488          0.720         0.540              0.819             0.513
+saved /Users/hiwotbelaytadesse/Desktop/explore_adarp/processed_hrv_eda/train_vs_test_auc.png

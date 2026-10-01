@@ -1,0 +1,12 @@
+# raw and third-party data (ADARP is on Zenodo 6640290; 4.6 GB)
+Sensor Data/
+SMILE/
+nurses/
+# large binary outputs: windows, pretrained encoders
+*.npz
+*.h5
+*.pkl
+# system / editor
+.DS_Store
+__pycache__/
+*.pyc

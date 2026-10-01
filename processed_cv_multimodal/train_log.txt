@@ -1,0 +1,80 @@
+P101C: 2521 windows with >= 30 beats, 2161 labelled, 20 stress
+P102C: 3197 windows with >= 30 beats, 1674 labelled, 130 stress
+P104C: 1633 windows with >= 30 beats, 1466 labelled, 2 stress
+P105C: 5482 windows with >= 30 beats, 4442 labelled, 128 stress
+P106C: 5032 windows with >= 30 beats, 4530 labelled, 121 stress
+P107C: 1421 windows with >= 30 beats, 1221 labelled, 20 stress
+P108C: 2776 windows with >= 30 beats, 2026 labelled, 81 stress
+P109C: 2554 windows with >= 30 beats, 1842 labelled, 92 stress
+P110C: 3194 windows with >= 30 beats, 2517 labelled, 96 stress
+P111C: 1755 windows with >= 30 beats, 1082 labelled, 107 stress
+P112C: 563 windows with >= 30 beats, 277 labelled, 41 stress
+P101C fold 0: EDA test 0.911 | EDA+HRV test 0.714
+WARNING:tensorflow:5 out of the last 5 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x35b9e8e00> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x35b9e8e00> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+P101C fold 2: EDA test 0.889 | EDA+HRV test 0.608
+P101C fold 3: EDA test 0.108 | EDA+HRV test 0.158
+P101C fold 4: EDA test 0.732 | EDA+HRV test 0.783
+P101C: EDA train 0.890 test 0.722 | EDA+HRV train 0.993 test 0.574 (36s)
+P102C fold 0: EDA test 0.297 | EDA+HRV test 0.507
+P102C fold 1: EDA test 0.565 | EDA+HRV test 0.648
+P102C fold 2: EDA test 0.483 | EDA+HRV test 0.552
+P102C fold 3: EDA test 0.627 | EDA+HRV test 0.482
+P102C fold 4: EDA test 0.592 | EDA+HRV test 0.560
+P102C: EDA train 0.702 test 0.503 | EDA+HRV train 0.846 test 0.528 (40s)
+P104C: EDA train nan test nan | EDA+HRV train nan test nan (0s)
+P105C fold 0: EDA test 0.632 | EDA+HRV test 0.634
+P105C fold 1: EDA test 0.573 | EDA+HRV test 0.524
+P105C fold 2: EDA test 0.356 | EDA+HRV test 0.471
+P105C fold 3: EDA test 0.368 | EDA+HRV test 0.521
+P105C: EDA train 0.602 test 0.418 | EDA+HRV train 0.801 test 0.561 (50s)
+P106C fold 0: EDA test 0.586 | EDA+HRV test 0.550
+P106C fold 1: EDA test 0.383 | EDA+HRV test 0.842
+P106C fold 3: EDA test 0.817 | EDA+HRV test 0.676
+P106C fold 4: EDA test 0.605 | EDA+HRV test 0.731
+P106C: EDA train 0.678 test 0.574 | EDA+HRV train 0.898 test 0.643 (48s)
+P107C fold 0: EDA test 0.989 | EDA+HRV test 0.791
+P107C fold 1: EDA test 0.659 | EDA+HRV test 0.810
+P107C fold 2: EDA test 0.841 | EDA+HRV test 0.842
+P107C fold 3: EDA test 0.887 | EDA+HRV test 0.920
+P107C: EDA train 0.844 test 0.826 | EDA+HRV train 0.954 test 0.835 (22s)
+P108C fold 0: EDA test 0.506 | EDA+HRV test 0.686
+P108C fold 1: EDA test 0.188 | EDA+HRV test 0.795
+P108C fold 2: EDA test 0.126 | EDA+HRV test 0.704
+P108C fold 3: EDA test 0.122 | EDA+HRV test 0.560
+P108C: EDA train 0.745 test 0.282 | EDA+HRV train 0.916 test 0.643 (29s)
+P109C fold 1: EDA test 0.619 | EDA+HRV test 0.465
+P109C fold 2: EDA test 0.633 | EDA+HRV test 0.604
+P109C fold 3: EDA test 0.544 | EDA+HRV test 0.687
+P109C fold 4: EDA test 0.739 | EDA+HRV test 0.438
+P109C: EDA train 0.635 test 0.642 | EDA+HRV train 0.889 test 0.529 (28s)
+P110C fold 2: EDA test 0.560 | EDA+HRV test 0.478
+P110C fold 3: EDA test 0.739 | EDA+HRV test 0.349
+P110C fold 4: EDA test 0.346 | EDA+HRV test 0.212
+P110C: EDA train 0.662 test 0.545 | EDA+HRV train 0.862 test 0.360 (24s)
+P111C fold 0: EDA test 0.521 | EDA+HRV test 0.352
+P111C fold 1: EDA test 0.520 | EDA+HRV test 0.730
+P111C fold 2: EDA test 0.602 | EDA+HRV test 0.549
+P111C fold 3: EDA test 0.692 | EDA+HRV test 0.668
+P111C fold 4: EDA test 0.169 | EDA+HRV test 0.208
+P111C: EDA train 0.598 test 0.462 | EDA+HRV train 0.855 test 0.499 (29s)
+P112C fold 1: EDA test 0.781 | EDA+HRV test 0.478
+P112C fold 2: EDA test 0.706 | EDA+HRV test 0.739
+P112C fold 3: EDA test 0.397 | EDA+HRV test 0.808
+P112C fold 4: EDA test 0.696 | EDA+HRV test 0.758
+P112C: EDA train 0.796 test 0.679 | EDA+HRV train 0.888 test 0.621 (16s)
+
+=== per person ===
+participant  n_tags  n_stress  n_nostress  folds  EDA_train_auc  EDA_test_auc  EDA+HRV_train_auc  EDA+HRV_test_auc
+      P101C  19.000    20.000    2141.000  4.000          0.890         0.722              0.993             0.574
+      P102C  86.000   130.000    1544.000  5.000          0.702         0.503              0.846             0.528
+      P104C  22.000     2.000    1464.000  0.000            NaN           NaN                NaN               NaN
+      P105C  32.000   128.000    4314.000  4.000          0.602         0.418              0.801             0.561
+      P106C  28.000   121.000    4409.000  4.000          0.678         0.574              0.898             0.643
+      P107C  22.000    20.000    1201.000  4.000          0.844         0.826              0.954             0.835
+      P108C  24.000    81.000    1945.000  4.000          0.745         0.282              0.916             0.643
+      P109C  40.000    92.000    1750.000  4.000          0.635         0.642              0.889             0.529
+      P110C  26.000    96.000    2421.000  3.000          0.662         0.545              0.862             0.360
+      P111C  49.000   107.000     975.000  5.000          0.598         0.462              0.855             0.499
+      P112C  61.000    41.000     236.000  4.000          0.796         0.679              0.888             0.621
+       MEAN  37.182    76.182    2036.364  3.727          0.715         0.565              0.890             0.579

@@ -1,0 +1,13 @@
+{
+ "fs": 4,
+ "win": 240,
+ "step": 120,
+ "buffer_s": 1800,
+ "test_frac": 0.2,
+ "seed": 0,
+ "filter": "butter 2nd order lowpass 1.25 Hz filtfilt",
+ "norm": "min-max [0,1] per recording",
+ "split": "random by window, stratified 80/20 within participant",
+ "tags": 409,
+ "valid_events": 181
+}

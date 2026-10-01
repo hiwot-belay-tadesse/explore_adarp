@@ -1,0 +1,12 @@
+{
+  "fs": 4,
+  "window_s": 60,
+  "step_s": 30,
+  "stress_s": 1200,
+  "buffer_s": 3600,
+  "test_frac": 0.3,
+  "seed": 42,
+  "lowpass_hz": 1.25,
+  "split": "random by time-overlap session group",
+  "normalisation": "per-participant min-max fitted on train"
+}

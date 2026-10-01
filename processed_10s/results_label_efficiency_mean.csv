@@ -1,0 +1,15 @@
+model,n_labels,train_auc,test_auc
+ssl_finetune,5,0.833,0.505
+ssl_finetune,10,0.758,0.513
+ssl_finetune,20,0.684,0.462
+ssl_finetune,50,0.647,0.514
+ssl_finetune,100,0.628,0.53
+ssl_finetune,200,0.653,0.458
+ssl_finetune,500,0.627,0.473
+supervised,5,0.879,0.514
+supervised,10,0.841,0.515
+supervised,20,0.734,0.466
+supervised,50,0.684,0.514
+supervised,100,0.673,0.495
+supervised,200,0.713,0.487
+supervised,500,0.691,0.498

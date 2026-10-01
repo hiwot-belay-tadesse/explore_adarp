@@ -1,0 +1,79 @@
+P101C fold 0: train_auc=0.787 test_auc=0.656 (test stress windows 786)
+P101C fold 1: train_auc=0.785 test_auc=0.426 (test stress windows 119)
+P101C fold 2: train_auc=0.745 test_auc=0.511 (test stress windows 211)
+P101C fold 3: train_auc=0.792 test_auc=0.465 (test stress windows 276)
+P101C fold 4: train_auc=0.771 test_auc=0.697 (test stress windows 187)
+P101C: mean train AUC 0.776  pooled test AUC 0.608  (65s)
+P102C fold 0: train_auc=0.657 test_auc=0.570 (test stress windows 234)
+P102C fold 1: train_auc=0.683 test_auc=0.499 (test stress windows 2261)
+P102C fold 2: train_auc=0.654 test_auc=0.557 (test stress windows 604)
+P102C fold 3: train_auc=0.704 test_auc=0.664 (test stress windows 1589)
+P102C fold 4: train_auc=0.659 test_auc=0.479 (test stress windows 1202)
+P102C: mean train AUC 0.671  pooled test AUC 0.576  (57s)
+P104C fold 0: train_auc=0.597 test_auc=0.681 (test stress windows 118)
+P104C fold 1: train_auc=0.610 test_auc=0.424 (test stress windows 282)
+P104C fold 2: train_auc=0.654 test_auc=0.399 (test stress windows 117)
+P104C fold 3: train_auc=0.655 test_auc=0.484 (test stress windows 290)
+P104C fold 4: train_auc=0.600 test_auc=0.556 (test stress windows 383)
+P104C: mean train AUC 0.623  pooled test AUC 0.506  (41s)
+P105C fold 0: train_auc=0.602 test_auc=0.429 (test stress windows 726)
+P105C fold 1: train_auc=0.607 test_auc=0.479 (test stress windows 235)
+P105C fold 2: train_auc=0.598 test_auc=0.420 (test stress windows 473)
+P105C fold 3: train_auc=0.643 test_auc=0.554 (test stress windows 1237)
+P105C fold 4: train_auc=0.591 test_auc=0.529 (test stress windows 118)
+P105C: mean train AUC 0.608  pooled test AUC 0.453  (85s)
+P106C fold 0: train_auc=0.707 test_auc=0.490 (test stress windows 941)
+P106C fold 1: train_auc=0.630 test_auc=0.662 (test stress windows 473)
+P106C fold 2: train_auc=0.615 test_auc=0.558 (test stress windows 353)
+P106C fold 3: train_auc=0.678 test_auc=0.456 (test stress windows 585)
+P106C fold 4: train_auc=0.592 test_auc=0.768 (test stress windows 824)
+P106C: mean train AUC 0.644  pooled test AUC 0.567  (90s)
+P107C fold 0: train_auc=0.601 test_auc=0.383 (test stress windows 587)
+P107C fold 1: train_auc=0.569 test_auc=0.549 (test stress windows 349)
+P107C fold 2: train_auc=0.561 test_auc=0.482 (test stress windows 232)
+P107C fold 3: train_auc=0.580 test_auc=0.279 (test stress windows 470)
+P107C fold 4: train_auc=0.580 test_auc=0.439 (test stress windows 526)
+P107C: mean train AUC 0.578  pooled test AUC 0.410  (75s)
+P108C fold 0: train_auc=0.667 test_auc=0.293 (test stress windows 476)
+P108C fold 1: train_auc=0.627 test_auc=0.727 (test stress windows 587)
+P108C fold 2: train_auc=0.678 test_auc=0.153 (test stress windows 117)
+P108C fold 3: train_auc=0.709 test_auc=0.505 (test stress windows 473)
+P108C fold 4: train_auc=0.682 test_auc=0.523 (test stress windows 513)
+P108C: mean train AUC 0.672  pooled test AUC 0.512  (46s)
+P109C fold 0: train_auc=0.641 test_auc=0.333 (test stress windows 712)
+P109C fold 1: train_auc=0.532 test_auc=0.672 (test stress windows 940)
+P109C fold 2: train_auc=0.582 test_auc=0.482 (test stress windows 799)
+P109C fold 3: train_auc=0.645 test_auc=0.362 (test stress windows 826)
+P109C fold 4: train_auc=0.629 test_auc=0.340 (test stress windows 590)
+P109C: mean train AUC 0.606  pooled test AUC 0.438  (50s)
+P110C fold 0: train_auc=0.707 test_auc=0.901 (test stress windows 118)
+P110C fold 1: train_auc=0.716 test_auc=0.339 (test stress windows 775)
+P110C fold 2: train_auc=0.718 test_auc=0.643 (test stress windows 260)
+P110C fold 3: train_auc=0.743 test_auc=0.576 (test stress windows 673)
+P110C fold 4: train_auc=0.735 test_auc=0.610 (test stress windows 638)
+P110C: mean train AUC 0.724  pooled test AUC 0.529  (62s)
+P111C fold 0: train_auc=0.595 test_auc=0.558 (test stress windows 1497)
+P111C fold 1: train_auc=0.612 test_auc=0.561 (test stress windows 1063)
+P111C fold 2: train_auc=0.558 test_auc=0.570 (test stress windows 944)
+P111C fold 3: train_auc=0.607 test_auc=0.438 (test stress windows 590)
+P111C fold 4: train_auc=0.631 test_auc=0.481 (test stress windows 708)
+P111C: mean train AUC 0.600  pooled test AUC 0.570  (74s)
+P112C fold 1: train_auc=0.705 test_auc=0.519 (test stress windows 7)
+P112C fold 2: train_auc=0.855 test_auc=0.508 (test stress windows 1129)
+P112C fold 4: train_auc=0.887 test_auc=0.453 (test stress windows 1364)
+P112C: mean train AUC 0.816  pooled test AUC 0.700  (14s)
+
+=== per person ===
+ participant  folds_evaluated  n_tags  n_stress_windows  n_nostress_windows  train_auc  test_auc_pooled  test_auc_fold_mean  test_auc_fold_sd
+      P101C            5.000  19.000          1579.000           62636.000      0.776            0.608               0.551             0.119
+      P102C            5.000  86.000          5890.000           50442.000      0.671            0.576               0.554             0.072
+      P104C            5.000  22.000          1190.000           45694.000      0.623            0.506               0.509             0.114
+      P105C            5.000  32.000          2789.000           95193.000      0.608            0.453               0.482             0.059
+      P106C            5.000  28.000          3176.000          109166.000      0.644            0.567               0.587             0.128
+      P107C            5.000  22.000          2164.000          106147.000      0.578            0.410               0.426             0.103
+      P108C            5.000  24.000          2166.000           48354.000      0.672            0.512               0.440             0.222
+      P109C            5.000  40.000          3867.000           46637.000      0.606            0.438               0.438             0.144
+      P110C            5.000  26.000          2464.000           73196.000      0.724            0.529               0.614             0.200
+      P111C            5.000  49.000          4802.000           69396.000      0.600            0.570               0.522             0.059
+      P112C            3.000  61.000          2500.000           19589.000      0.816            0.700               0.494             0.035
+       MEAN            4.818  37.182          2962.455           66040.909      0.665            0.534               0.511             0.114

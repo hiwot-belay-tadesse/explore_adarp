@@ -1,0 +1,63 @@
+P101C ssl_finetune  full  train_auc=0.601 test_auc=0.550 f1=0.040
+P101C supervised    full  train_auc=0.626 test_auc=0.618 f1=0.048
+P101C done in 107s
+P102C ssl_finetune  full  train_auc=0.571 test_auc=0.530 f1=0.487
+P102C supervised    full  train_auc=0.629 test_auc=0.544 f1=0.458
+WARNING:tensorflow:5 out of the last 18 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x36b6a0680> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 17 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x36c1027a0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+P102C done in 112s
+P104C ssl_finetune  full  train_auc=0.659 test_auc=0.609 f1=0.212
+P104C supervised    full  train_auc=0.657 test_auc=0.582 f1=0.217
+P104C done in 98s
+P105C ssl_finetune  full  train_auc=0.601 test_auc=0.555 f1=0.064
+P105C supervised    full  train_auc=0.603 test_auc=0.558 f1=0.043
+P105C done in 119s
+P106C ssl_finetune  full  train_auc=0.572 test_auc=0.563 f1=0.151
+P106C supervised    full  train_auc=0.581 test_auc=0.538 f1=0.137
+P106C done in 129s
+P107C ssl_finetune  full  train_auc=0.541 test_auc=0.518 f1=0.062
+P107C supervised    full  train_auc=0.616 test_auc=0.451 f1=0.055
+P107C done in 125s
+P108C ssl_finetune  full  train_auc=0.659 test_auc=0.373 f1=0.123
+P108C supervised    full  train_auc=0.690 test_auc=0.640 f1=0.219
+P108C done in 102s
+P109C ssl_finetune  full  train_auc=0.612 test_auc=0.366 f1=0.107
+P109C supervised    full  train_auc=0.630 test_auc=0.398 f1=0.105
+P109C done in 99s
+P110C ssl_finetune  full  train_auc=0.557 test_auc=0.578 f1=0.195
+P110C supervised    full  train_auc=0.561 test_auc=0.548 f1=0.000
+P110C done in 119s
+P111C ssl_finetune  full  train_auc=0.568 test_auc=0.376 f1=0.148
+P111C supervised    full  train_auc=0.592 test_auc=0.419 f1=0.140
+P111C done in 120s
+P112C ssl_finetune  full  train_auc=0.730 test_auc=0.401 f1=0.503
+P112C supervised    full  train_auc=0.814 test_auc=0.406 f1=0.473
+P112C done in 102s
+
+=== AUC per person (full labels) ===
+                train_auc                test_auc           
+model       ssl_finetune supervised ssl_finetune supervised
+participant                                                
+P101C              0.601      0.626        0.550      0.618
+P102C              0.571      0.629        0.530      0.544
+P104C              0.659      0.657        0.609      0.582
+P105C              0.601      0.603        0.555      0.558
+P106C              0.572      0.581        0.563      0.538
+P107C              0.541      0.616        0.518      0.451
+P108C              0.659      0.690        0.373      0.640
+P109C              0.612      0.630        0.366      0.398
+P110C              0.557      0.561        0.578      0.548
+P111C              0.568      0.592        0.376      0.419
+P112C              0.730      0.814        0.401      0.406
+
+=== mean over participants and repeats: AUC vs number of labels ===
+             train_auc                test_auc           
+model    ssl_finetune supervised ssl_finetune supervised
+n_labels                                                
+5               0.833      0.879        0.505      0.514
+10              0.758      0.841        0.513      0.515
+20              0.684      0.734        0.462      0.466
+50              0.647      0.684        0.514      0.514
+100             0.628      0.673        0.530      0.495
+200             0.653      0.713        0.458      0.487
+500             0.627      0.691        0.473      0.498
