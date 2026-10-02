@@ -11,12 +11,13 @@
 #
 # Usage (from the project directory on the cluster):
 #   mkdir -p processed_paper_split
+#   interactive test first (per FASRC docs): salloc -p gpu_test -t 0-01:00 --mem 8000 --gpus=1 ; nvidia-smi
 #   sbatch submit_paper_split.sh                                  # pooled model, SMOTE (the agreed run)
 #   sbatch --export=ALL,ONLY=P101C,BALANCE=under submit_paper_split.sh   # any other (scope, balance)
 #   sbatch --export=ALL,ONLY=,BALANCE=under,smote submit_paper_split.sh   # everything: pooled + 11 personal, both balances
 # Finished (scope, balance) pairs in results.csv are skipped, so a job can simply be resubmitted after a timeout.
 
-module load python
+module load python cuda cudnn      # FASRC: load CUDA (and cuDNN) before TensorFlow; pin versions with module spider cuda
 source activate ${CONDA_ENV:-adarp}        # env with tensorflow, scikit-learn, scipy, pandas, matplotlib
 
 export ONLY=${ONLY-pooled}
