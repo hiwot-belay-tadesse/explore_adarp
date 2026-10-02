@@ -17,6 +17,7 @@
 #   sbatch --export=ALL,ONLY=,BALANCE=under,smote submit_paper_split.sh   # everything: pooled + 11 personal, both balances
 # Finished (scope, balance) pairs in results.csv are skipped, so a job can simply be resubmitted after a timeout.
 
+set -eo pipefail                            # any failing step aborts the job, so SLURM reports FAILED instead of COMPLETED
 module load python cuda cudnn      # FASRC: load CUDA (and cuDNN) before TensorFlow; pin versions with module spider cuda
 source activate ${CONDA_ENV:-adarp} || { echo "conda env ${CONDA_ENV:-adarp} not found: create it with  mamba create -n adarp python=3.11 && source activate adarp && pip install -r requirements_cluster.txt"; exit 1; }
 
