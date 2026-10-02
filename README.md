@@ -88,3 +88,8 @@ button-press labels dominate; HRV adds capacity but not generalisation; the E4 I
 
 WESAD S2 (Islam & Washington setup, baseline + TSST, test = last 11.5 % of each block): train AUC 1.0 for every fit, test AUC
 unstable across label draws and below 0.5 with all labels for both SSL and supervised. The paper's SSL advantage did not reproduce.
+
+Paper-protocol replication, pooled CNN + SMOTE, random split by window (2026-10-02, `processed_paper_split/`): train acc 0.65 /
+AUC 0.71 on the balanced training set, test acc 0.60, precision 0.13, recall 0.59, F1 0.21, AUC 0.64. Held-out loss bottomed at
+epoch 20 (0.64) and rose to 0.66 by epoch 50. Per-participant test AUC of the pooled model ranges 0.39 to 0.79. The paper's
+Table II (test acc 0.87, F1 0.84) and its near-zero training loss did not reproduce, even with the leaky window-level split.

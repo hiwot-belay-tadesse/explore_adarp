@@ -1,3 +1,10 @@
 /Users/hiwotbelaytadesse/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:34: NotOpenSSLWarning: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
   warnings.warn(
   pooled smote epoch 1 loss 0.6905 val_loss 0.6887 (193 s)
+  pooled smote epoch 10 loss 0.6527 val_loss 0.6629 (1998 s)
+  pooled smote epoch 20 loss 0.6397 val_loss 0.6411 (58845 s)
+  pooled smote epoch 30 loss 0.6320 val_loss 0.6793 (60871 s)
+  pooled smote epoch 40 loss 0.6262 val_loss 0.6628 (62907 s)
+  pooled smote epoch 50 loss 0.6218 val_loss 0.6619 (64946 s)
+pooled  smote train n=279160  test acc=0.604 prec=0.130 rec=0.592 f1=0.213 auc=0.638  (1082.4 min)
+done
