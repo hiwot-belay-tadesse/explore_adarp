@@ -11,7 +11,7 @@ if not hist: raise SystemExit("no history files yet")
 bals = [b for b in ("under", "smote") if any(k[0] == b for k in hist)]
 scopes = ["pooled"] + sorted({k[1] for k in hist} - {"pooled"})
 ncol = min(6, len(scopes)); nrow_per = int(np.ceil(len(scopes) / ncol))
-fig, axes = plt.subplots(nrow_per * len(bals), ncol, figsize=(2.4 * ncol + 1, 2.0 * nrow_per * len(bals) + 1.2),
+fig, axes = plt.subplots(nrow_per * len(bals), ncol, figsize=(max(7, 2.4 * ncol + 1), 2.0 * nrow_per * len(bals) + 1.9),
                          facecolor=SURF, squeeze=False, sharex=True)
 ymax = max(max(h.train_loss.max(), h.val_loss.max()) for h in hist.values()) * 1.05
 for bi, bal in enumerate(bals):
@@ -34,7 +34,7 @@ for bi, bal in enumerate(bals):
 for ax in axes[-1]: ax.set_xlabel("epoch", fontsize=7, color=INK2)
 fig.legend(handles=[plt.Line2D([], [], color=TRAIN, lw=2, label="training loss (balanced train set)"),
                     plt.Line2D([], [], color=TEST, lw=2, label="held-out loss (test windows, natural class ratio)")],
-           loc="upper right", fontsize=8, frameon=False, ncol=2, bbox_to_anchor=(0.99, 1.0))
-fig.suptitle("ADARP paper protocol: random split by window, paper CNN on EDA", fontsize=10, color=INK, x=0.01, ha="left", y=0.995)
-fig.tight_layout(rect=(0, 0, 1, 0.965)); fig.savefig(os.path.join(OUT, "loss_curves.png"), dpi=150, facecolor=SURF)
+           loc="upper left", fontsize=8, frameon=False, ncol=1, bbox_to_anchor=(0.01, 0.955))
+fig.suptitle("ADARP paper protocol: random split by window, paper CNN on EDA", fontsize=10, color=INK, x=0.01, ha="left", y=0.99)
+fig.tight_layout(rect=(0, 0, 1, 0.86)); fig.savefig(os.path.join(OUT, "loss_curves.png"), dpi=150, facecolor=SURF)
 print("wrote", os.path.join(OUT, "loss_curves.png"), "models:", len(hist))
