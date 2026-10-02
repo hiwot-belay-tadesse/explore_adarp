@@ -16,7 +16,7 @@
 # Finished (scope, balance) pairs in results.csv are skipped, so a job can simply be resubmitted after a timeout.
 
 module load python
-source activate ${CONDA_ENV:-adarp}        # env with tensorflow, scikit-learn, scipy, pandas, matplotlib
+source activate ${CONDA_ENV:-adarp} || { echo "conda env ${CONDA_ENV:-adarp} not found: create it with  mamba create -n adarp python=3.11 && source activate adarp && pip install -r requirements_cluster.txt"; exit 1; }
 
 export ONLY=${ONLY-pooled}
 export BALANCE=${BALANCE:-smote}
