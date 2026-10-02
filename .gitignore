@@ -10,3 +10,4 @@ nurses/
 .DS_Store
 __pycache__/
 *.pyc
+processed_authors/*.npz

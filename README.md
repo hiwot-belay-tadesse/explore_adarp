@@ -16,6 +16,7 @@ self-supervised approach of Islam & Washington (2023, arXiv:2307.03337), adapted
 | `cv_ssl_multimodal.py` | Same CV with EDA + HRV tachogram (IBI interpolated to 4 Hz), one encoder per modality, late fusion. Output `processed_cv_multimodal/`, plot `plot_multimodal.py`. |
 | `hrv_eda_logreg.py` | Logistic-regression baseline on EDA + HRV features, same windows and folds. Output `processed_hrv_eda/`. |
 | `prep_paper_split.py`, `train_paper_split.py` | Replication of the ADARP paper's own protocol (Alam et al. 2022, Sec. III-B): random 80/20 split **by window** (not by session), 60 s windows with 50 % overlap, Butterworth 1.25 Hz low-pass, min-max, paper CNN, majority undersampling and SMOTE; one pooled model plus one per participant. Output `processed_paper_split/`. |
+| `authors_pipeline.py` | Line-by-line re-implementation of the authors' own code (github.com/rameshKrSah/ADARP_Dataset): ±20 min stress segments, not-stress > 60 min, min-max per segment, 70/30 random window split, undersampling with replacement before the split (Table I) or SMOTE after it (Table II), their CNN with code (lr 0.01157, batch 100) or paper (0.001, 32) settings. `NORM=recording` is the control with one scale per recording. Output `processed_authors/`. See `PAPER_COMPARISON.md`. |
 | `wesad_replicate.py` | Replication of Islam & Washington on WESAD (`~/WESAD`): `BLOCKS=1` literal paper (RMSE), `BLOCKS=1,2` adds TSST for AUC. Output `wesad_replication/`, plot `plot_wesad.py`. |
 
 ## Preprocessing (`prep_ssl_10s.py`)
