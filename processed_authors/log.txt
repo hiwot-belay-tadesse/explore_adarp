@@ -40,3 +40,20 @@ under_code   recording train n=20018 test acc=0.500 prec=0.000 rec=0.000 f1=0.00
 NORM=recording: stress windows 14299, not-stress windows 134526
   smote_paper recording epoch 1 loss 0.6928 val_loss 0.7049 (135 s)
   smote_paper recording epoch 10 loss 0.6438 val_loss 0.6439 (1566 s)
+  smote_paper recording epoch 20 loss 0.6213 val_loss 0.6474 (3476 s)
+  smote_paper recording epoch 30 loss 0.6101 val_loss 0.6496 (4945 s)
+  smote_paper recording epoch 40 loss 0.6027 val_loss 0.6389 (6444 s)
+  smote_paper recording epoch 50 loss 0.5947 val_loss 0.6618 (7953 s)
+smote_paper  recording train n=188336 test acc=0.596 prec=0.149 rec=0.679 f1=0.244 auc=0.699 (132.6 min)
+done
+/Users/hiwotbelaytadesse/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:34: NotOpenSSLWarning: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+NORM=segment: stress windows 14299, not-stress windows 134526
+  smote_paper segment epoch 1 loss 0.5973 val_loss 0.6871 (134 s)
+  smote_paper segment epoch 10 loss 0.5305 val_loss 0.6088 (1449 s)
+  smote_paper segment epoch 20 loss 0.5049 val_loss 0.6143 (3085 s)
+  smote_paper segment epoch 30 loss 0.4892 val_loss 0.6106 (4840 s)
+  smote_paper segment epoch 40 loss 0.4783 val_loss 0.5362 (6687 s)
+  smote_paper segment epoch 50 loss 0.4694 val_loss 0.5922 (8131 s)
+smote_paper  segment   train n=188336 test acc=0.669 prec=0.202 rec=0.824 f1=0.324 auc=0.812 (135.5 min)
+done

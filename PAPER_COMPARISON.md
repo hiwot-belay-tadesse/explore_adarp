@@ -61,11 +61,11 @@ Same 14,299 stress and 134,526 not-stress windows as their code, 70/30 random wi
 | Table I, control | per recording | paper | 0.62 | 0.62 | 0.59 | 0.61 | **0.68** | |
 | Table II (SMOTE on train after split) | per segment | code | 0.67 | 0.20 | 0.79 | 0.32 | **0.79** | 0.87 / 0.84 |
 | Table II, control | per recording | code | collapsed by epoch 10 (loss 0.693), stopped | | | | | |
-| Table II | per recording | paper | running | | | | | |
-| Table II | per segment | paper | queued | | | | | |
+| Table II | per recording | paper | 0.60 | 0.15 | 0.68 | 0.24 | **0.70** | |
+| Table II | per segment | paper | 0.67 | 0.20 | 0.82 | 0.32 | **0.81** | 0.87 / 0.84 |
 
 Reading: the authors' own pipeline, run as written, gives test AUC 0.79 to 0.83 and accuracy 0.67 to 0.74, not 87 to 98 %.
-Changing only the normalisation unit from segment to recording drops Table I from AUC 0.83 to 0.68 with the paper's optimiser
-and to a collapsed constant predictor with the code's optimiser. The remaining 0.68 is what the leaky window-level split
+Changing only the normalisation unit from segment to recording drops Table I from AUC 0.83 to 0.68 and Table II from 0.81 to 0.70
+with the paper's optimiser, and collapses both to a constant predictor with the code's optimiser. The remaining 0.68 is what the leaky window-level split
 leaves on EDA; leak-free per-participant splits give 0.47 to 0.58. Nothing in the repository reproduces a training
 accuracy of 99.7 %; the training notebook is not published.

@@ -94,3 +94,7 @@ Paper-protocol replication, pooled CNN + SMOTE, random split by window (2026-10-
 AUC 0.71 on the balanced training set, test acc 0.60, precision 0.13, recall 0.59, F1 0.21, AUC 0.64. Held-out loss bottomed at
 epoch 20 (0.64) and rose to 0.66 by epoch 50. Per-participant test AUC of the pooled model ranges 0.39 to 0.79. The paper's
 Table II (test acc 0.87, F1 0.84) and its near-zero training loss did not reproduce, even with the leaky window-level split.
+
+Authors' own pipeline re-run as written (`authors_pipeline.py`, 2026-10-03): test AUC 0.79 to 0.83, accuracy 0.67 to 0.74, versus the paper's
+87 to 98 %. Replacing their per-segment min-max with one scale per recording, everything else identical, gives AUC 0.68 to 0.70 (paper
+optimiser) or a constant predictor (code optimiser). Details in `PAPER_COMPARISON.md`, results in `processed_authors/results.csv`.
