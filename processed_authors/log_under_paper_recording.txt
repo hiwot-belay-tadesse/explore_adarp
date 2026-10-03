@@ -1,0 +1,11 @@
+/Users/hiwotbelaytadesse/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:34: NotOpenSSLWarning: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+NORM=recording: stress windows 14299, not-stress windows 134526
+  under_paper recording epoch 1 loss 0.6902 val_loss 0.6761 (23 s)
+  under_paper recording epoch 10 loss 0.6560 val_loss 0.6499 (231 s)
+  under_paper recording epoch 20 loss 0.6479 val_loss 0.6464 (479 s)
+  under_paper recording epoch 30 loss 0.6413 val_loss 0.6416 (725 s)
+  under_paper recording epoch 40 loss 0.6381 val_loss 0.6424 (975 s)
+  under_paper recording epoch 50 loss 0.6337 val_loss 0.6385 (1221 s)
+under_paper  recording train n=20018 test acc=0.617 prec=0.624 rec=0.590 f1=0.607 auc=0.680 (20.3 min)
+done

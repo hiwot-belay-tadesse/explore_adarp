@@ -108,7 +108,7 @@ def score(m, X, y):
 
 S, N, S_pid, N_pid = build_windows()
 print(f"NORM={NORM}: stress windows {len(S)}, not-stress windows {len(N)}", flush=True)
-RES = os.path.join(OUT, "results.csv"); rows = pd.read_csv(RES).to_dict("records") if os.path.exists(RES) else []
+RES = os.path.join(OUT, os.environ.get("RESULTS", "results.csv")); rows = pd.read_csv(RES).to_dict("records") if os.path.exists(RES) else []
 for v in VARIANTS:
     if any(r["variant"] == v and r["norm"] == NORM and r["eval"] == "test" for r in rows): print("skip", v); continue
     bal, hp = v.split("_"); lr, bs = (0.01157, 100) if hp == "code" else (0.001, 32)

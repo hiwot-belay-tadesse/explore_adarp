@@ -47,3 +47,25 @@ leaves test AUC 0.64 (`processed_paper_split/results.csv`), consistent with the 
   is smaller than intended; the paper's Table I was produced on this set and then split.
 - `load_data_with_preprocessing` and `min_max_scale` rescale to [-1, 1] with a scaler fitted per time index across all
   windows (train and test together). Whether it was applied for the paper is not recoverable from the repo.
+
+## Running their pipeline (`authors_pipeline.py`, 2026-10-02/03)
+
+Same 14,299 stress and 134,526 not-stress windows as their code, 70/30 random window split (seed 42), 50 epochs, EDA only.
+"code" = Adam lr 0.01157, batch 100 (model docstring); "paper" = lr 0.001, batch 32 (paper text). AUC is ours; the paper reports none.
+
+| setup | normalisation | optimiser | test acc | precision | recall | F1 | **test AUC** | paper acc / F1 |
+|---|---|---|---|---|---|---|---|---|
+| Table I (undersample w/ replacement before split) | per segment | code | 0.72 | 0.78 | 0.62 | 0.69 | **0.82** | 0.98 / 0.98 |
+| Table I | per segment | paper | 0.74 | 0.77 | 0.70 | 0.73 | **0.83** | 0.98 / 0.98 |
+| Table I, control | per recording | code | 0.50 | 0.00 | 0.00 | 0.00 | **0.50** (collapsed to constant) | |
+| Table I, control | per recording | paper | 0.62 | 0.62 | 0.59 | 0.61 | **0.68** | |
+| Table II (SMOTE on train after split) | per segment | code | 0.67 | 0.20 | 0.79 | 0.32 | **0.79** | 0.87 / 0.84 |
+| Table II, control | per recording | code | collapsed by epoch 10 (loss 0.693), stopped | | | | | |
+| Table II | per recording | paper | running | | | | | |
+| Table II | per segment | paper | queued | | | | | |
+
+Reading: the authors' own pipeline, run as written, gives test AUC 0.79 to 0.83 and accuracy 0.67 to 0.74, not 87 to 98 %.
+Changing only the normalisation unit from segment to recording drops Table I from AUC 0.83 to 0.68 with the paper's optimiser
+and to a collapsed constant predictor with the code's optimiser. The remaining 0.68 is what the leaky window-level split
+leaves on EDA; leak-free per-participant splits give 0.47 to 0.58. Nothing in the repository reproduces a training
+accuracy of 99.7 %; the training notebook is not published.

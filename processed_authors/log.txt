@@ -1,0 +1,42 @@
+/Users/hiwotbelaytadesse/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:34: NotOpenSSLWarning: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+NORM=segment: stress windows 14299, not-stress windows 134526
+  under_code segment epoch 1 loss 0.6192 val_loss 0.5772 (13 s)
+  under_code segment epoch 10 loss 0.5579 val_loss 0.5363 (125 s)
+  under_code segment epoch 20 loss 0.5518 val_loss 0.5312 (250 s)
+  under_code segment epoch 30 loss 0.5469 val_loss 0.5272 (376 s)
+  under_code segment epoch 40 loss 0.5440 val_loss 0.5302 (501 s)
+  under_code segment epoch 50 loss 0.5435 val_loss 0.5333 (632 s)
+under_code   segment   train n=20018 test acc=0.722 prec=0.779 rec=0.621 f1=0.691 auc=0.817 (10.5 min)
+  under_paper segment epoch 1 loss 0.5801 val_loss 0.5575 (18 s)
+  under_paper segment epoch 10 loss 0.5488 val_loss 0.5314 (159 s)
+  under_paper segment epoch 20 loss 0.5351 val_loss 0.5216 (316 s)
+  under_paper segment epoch 30 loss 0.5242 val_loss 0.5170 (470 s)
+  under_paper segment epoch 40 loss 0.5088 val_loss 0.5163 (628 s)
+  under_paper segment epoch 50 loss 0.5011 val_loss 0.5215 (796 s)
+under_paper  segment   train n=20018 test acc=0.744 prec=0.766 rec=0.702 f1=0.733 auc=0.828 (13.3 min)
+  smote_code segment epoch 1 loss 0.6171 val_loss 0.6164 (116 s)
+  smote_code segment epoch 10 loss 0.5946 val_loss 0.6749 (1175 s)
+  smote_code segment epoch 20 loss 0.5763 val_loss 0.6306 (3892 s)
+  smote_code segment epoch 30 loss 0.5743 val_loss 0.6155 (5282 s)
+  smote_code segment epoch 40 loss 0.5737 val_loss 0.6398 (6488 s)
+  smote_code segment epoch 50 loss 0.5745 val_loss 0.5704 (7669 s)
+smote_code   segment   train n=188336 test acc=0.673 prec=0.199 rec=0.793 f1=0.318 auc=0.793 (127.8 min)
+done
+/Users/hiwotbelaytadesse/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:34: NotOpenSSLWarning: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+NORM=recording: stress windows 14299, not-stress windows 134526
+  under_code recording epoch 1 loss 0.6964 val_loss 0.6932 (14 s)
+  under_code recording epoch 10 loss 0.6935 val_loss 0.6932 (131 s)
+  under_code recording epoch 20 loss 0.6935 val_loss 0.6932 (314 s)
+  under_code recording epoch 30 loss 0.6935 val_loss 0.6932 (855 s)
+  under_code recording epoch 40 loss 0.6935 val_loss 0.6932 (79690 s)
+  under_code recording epoch 50 loss 0.6935 val_loss 0.6932 (79842 s)
+under_code   recording train n=20018 test acc=0.500 prec=0.000 rec=0.000 f1=0.000 auc=0.500 (1330.7 min)
+  smote_code recording epoch 1 loss 0.6935 val_loss 0.7060 (127 s)
+  smote_code recording epoch 10 loss 0.6934 val_loss 0.7060 (1199 s)
+/Users/hiwotbelaytadesse/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:34: NotOpenSSLWarning: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+NORM=recording: stress windows 14299, not-stress windows 134526
+  smote_paper recording epoch 1 loss 0.6928 val_loss 0.7049 (135 s)
+  smote_paper recording epoch 10 loss 0.6438 val_loss 0.6439 (1566 s)
